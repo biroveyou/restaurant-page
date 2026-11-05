@@ -1,9 +1,102 @@
 :root {
-    --white: #FFFFFF;
-    --white-background: #F8F7F3;
-    --black: #000000;
-    --grey: #494A47;
-    --dark-grey: #2B2B2D;
-    --orange: #FF7000;
-    --green: #193F32;
+  /* Brand */
+  --forest-500: #193F32;
+  --forest-700: #102820;
+  --forest-100: #D6DCDA;
+
+  /* Accents */
+  --lime-500: #E9ED9E;
+  --lime-200: #F8F9DE;
+  --sage-500: #E6EADE;
+  --amber-500: #FDC600;
+  --orange-500: #FF7000;
+
+  /* Neutrals */
+  --cream-100: #F8F7F3;
+  --cream-200: #F1F0EA;
+  --white: #FFFFFF;
+  --text-muted: #4E564F;
+  --text-body: #555450;
+  --ink: #000000;
+}
+
+p,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0 32px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+/*  Navbar Styles*/
+nav {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+}
+
+#left-menu {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#center-menu {
+    justify-content: center;
+    color: var(--forest-500);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#right-menu {
+    justify-content: flex-end;
+}
+
+/* Menu buttons*/
+#left-menu button {
+    margin-right: 32px;
+    color: var(--forest-500);
+}
+
+#right-menu button {
+    padding: 8px 8px 8px 16px;
+    background-color: var(--forest-500);
+    color: var(--white);
+    border-radius: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px;
+    margin-left: 12px;
+    border-radius: 50%;
+}
+
+.arrow-top-right svg {
+    height: 18px;
+    width: 18px;
+}
+
+.light-icon {
+    background-color: var(--white);
+    fill: var(--forest-500);
 }
