@@ -114,7 +114,7 @@ nav {
     font-weight: bold;
 }
 
-#right-menu button {
+.light-button {
     padding: 8px 8px 8px 16px;
     background-color: var(--forest-500);
     color: var(--white);
