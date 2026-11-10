@@ -20,7 +20,8 @@
   --ink: #000000;
 }
 
-/* Font Styles*/
+/* Font 
+Styles*/
 @font-face {
     font-family: 'Fraunces';
     src: url('./assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.woff2') format('woff2');
@@ -74,7 +75,8 @@ button {
     cursor: pointer;
 }
 
-/*  Navbar Styles*/
+/* Navbar 
+Styles*/
 nav {
     display: flex;
     align-items: center;
@@ -100,7 +102,6 @@ nav {
     justify-content: flex-end;
 }
 
-/* Menu buttons*/
 #left-menu button {
     margin-right: 32px;
     color: var(--forest-500);
@@ -141,4 +142,12 @@ nav {
 .light-icon {
     background-color: var(--white);
     fill: var(--forest-500);
+}
+
+/* Homepage
+Styles */
+
+#home-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
