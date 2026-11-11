@@ -8,7 +8,8 @@ function generateSectionOne() {
     sectionOneContainer.classList.add("section-one");
     
     const subTitle = document.createElement("p");
-    subTitle.textContent = "[[Seasonal kitchen · San Francisco]]";
+    subTitle.classList.add("sub-title");
+    subTitle.textContent = "[ [ Seasonal kitchen · San Francisco ] ]";
     sectionOneContainer.appendChild(subTitle);
 
     const title = document.createElement("h1");
