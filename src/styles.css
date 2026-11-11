@@ -114,14 +114,24 @@ nav {
     font-weight: bold;
 }
 
-.light-button {
+/* Button 
+Styles */
+
+.main-button,
+.arrow-top-right,
+.light-button,
+.dark-button {
+    box-sizing: border-box;
+}
+
+.main-button {
     padding: 8px 8px 8px 16px;
-    background-color: var(--forest-500);
-    color: var(--white);
     border-radius: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 12px;
+    font-weight: 500;
 }
 
 .arrow-top-right {
@@ -130,7 +140,6 @@ nav {
     align-items: center;
 
     padding: 8px;
-    margin-left: 12px;
     border-radius: 50%;
 }
 
@@ -139,14 +148,29 @@ nav {
     width: 18px;
 }
 
+.light-button {
+    background-color: var(--forest-500);
+    color: var(--white);
+}
+
 .light-icon {
     background-color: var(--white);
     fill: var(--forest-500);
 }
 
+.dark-button {
+    border: 2px solid var(--forest-100);
+    outline-offset: -2px;
+    font-weight: 700;
+}
+
+.dark-icon {
+    background-color: var(--forest-500);
+    fill: var(--white);
+}
+
 /* Homepage
 Styles */
-
 #home-page {
     margin-top: 32px;
     display: grid;

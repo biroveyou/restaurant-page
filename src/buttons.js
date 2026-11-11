@@ -3,6 +3,7 @@ function generateButton(type, text) {
 
     const button = document.createElement("button");
     button.textContent = text;
+    button.classList.add("main-button");
     
     const iconContainer = document.createElement("div");
     iconContainer.classList.add("arrow-top-right");
