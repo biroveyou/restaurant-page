@@ -1,6 +1,3 @@
-// <button class="light-button">Book a table<div class="arrow-top-right light-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-top-right</title><path d="M5,17.59L15.59,7H9V5H19V15H17V8.41L6.41,19L5,17.59Z" /></svg></div></button>
-
-
 function generateButton(type, text) {
     const SVG_NS = "http://www.w3.org/2000/svg";
 
@@ -30,3 +27,5 @@ function generateButton(type, text) {
             return button;
     }
 }
+
+export {generateButton};
