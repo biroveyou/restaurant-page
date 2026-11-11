@@ -18,6 +18,9 @@
   --text-muted: #4E564F;
   --text-body: #555450;
   --ink: #000000;
+
+  /* Radius */
+  --radius-img: 16px;
 }
 
 /* Font 
@@ -59,6 +62,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fraunces';
+    font-weight: 500;
 }
 
 h1 {
@@ -73,6 +77,10 @@ body {
 button {
     all: unset;
     cursor: pointer;
+}
+
+.green-text {
+    color: var(--forest-500);
 }
 
 /* Navbar 
@@ -116,7 +124,6 @@ nav {
 
 /* Button 
 Styles */
-
 .main-button,
 .arrow-top-right,
 .light-button,
@@ -173,7 +180,97 @@ Styles */
 Styles */
 #home-page {
     margin-top: 32px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-evenly;
+}
+
+#home-page .section-one,
+#home-page .section-two,
+#home-page .section-three {
+    margin-top: 32px;
+}
+
+#home-page .section-one {
+    flex: 1 0 280px;
+    max-width: 560px;
+}
+
+#home-page .section-two {
+    flex: 1 0 340px;
+    max-width: 600px;
+}
+
+#home-page .section-three {
+    flex: 1 0 240px;
+    max-width: 480px;
+}
+
+#home-page .section-one:first-child {
+    color: var(--forest-500);
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+#home-page h1 {
+    margin: 4px 0 64px 0;
+}
+
+#home-page .section-one img {
+    width: 100%;
+    border-radius: var(--radius-img);
+}
+
+#home-page .section-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-page .section-two > div {
+    position: relative;
+}
+
+#home-page .section-two img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.stamp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 128px;
+    height: 128px;
+    background-color: var(--forest-500);
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10%;
+    left: 10%;
+    transform: rotate(10deg);
+}
+
+.stamp svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--white);
+}
+
+.stamp-text {
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    width: 96px;
+}
+
+#home-page .section-three img {
+    width: 100%;
+    border-radius: var(--radius-img);
 }
