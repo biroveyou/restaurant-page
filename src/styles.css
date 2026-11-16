@@ -170,6 +170,70 @@ nav {
     font-weight: bold;
 }
 
+/* Footer
+Styles */
+footer {
+    padding: 32px 48px;
+    margin-top: 64px;
+}
+
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 72px 32px 80px;
+    border-radius: var(--radius-img);
+    background-color: #FFFFFFEE;
+    position: relative;
+}
+
+footer > div > p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: fit-content;
+    bottom: 24px;
+    font-size: 0.85rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    flex-shrink: 0;
+}
+
+#social-media {
+    flex-grow: 3;
+    align-self: center;
+}
+#quick-links,
+#resource,
+#say-hello {
+    flex-grow: 2;
+}
+
+#social-media div {
+    margin-bottom: 24px;
+    font-size: 2rem;
+}
+
+#social-media p {
+    max-width: 300px;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+footer li {
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
 /* Button 
 Styles */
 .main-button,
@@ -233,7 +297,8 @@ main {
     padding: 0 32px 0;
 }
 
-nav {
+nav,
+footer {
     max-width: 1800px;
     margin: auto;
 }
@@ -365,70 +430,6 @@ Styles */
 
 #rating p {
     margin-bottom: 32px;
-}
-
-/* Footer
-Styles */
-footer {
-    padding: 32px 48px;
-    margin-top: 64px;
-}
-
-footer > div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 48px;
-    padding: 72px 32px 80px;
-    border-radius: var(--radius-img);
-    background-color: #FFFFFFEE;
-    position: relative;
-}
-
-footer > div > p {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: fit-content;
-    bottom: 24px;
-    font-size: 0.85rem;
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 200px;
-    flex-shrink: 0;
-}
-
-#social-media {
-    flex-grow: 3;
-    align-self: center;
-}
-#quick-links,
-#resource,
-#say-hello {
-    flex-grow: 2;
-}
-
-#social-media div {
-    margin-bottom: 24px;
-    font-size: 2rem;
-}
-
-#social-media p {
-    max-width: 300px;
-}
-
-footer h4 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 24px;
-}
-
-footer li {
-    margin-bottom: 16px;
-    cursor: pointer;
 }
 
 /* Visit Us
