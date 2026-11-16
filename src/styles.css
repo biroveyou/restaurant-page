@@ -72,6 +72,20 @@ ul {
     list-style: none;
 }
 
+input {
+    all: unset;
+    display: revert;
+    padding: 10px;
+    background-color: var(--cream-100);
+    border: 2px solid var(--cream-200);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: var(--text-muted)
+}
+
 /* Font 
 Styles*/
 @font-face {
@@ -415,4 +429,79 @@ footer h4 {
 footer li {
     margin-bottom: 16px;
     cursor: pointer;
+}
+
+/* Visit Us
+Styles */
+
+#visit-us-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 64px;
+}
+
+#visit-us-page > div {
+    flex: 1;
+}
+
+#visit-us-page #visit-us-title {
+    flex-grow: 6;
+    flex-shrink: 1;
+}
+
+#visit-us-page #book-table-form {
+    flex-grow: 5;
+    flex-shrink: 2;
+}
+
+#visit-us-page h1 {
+    margin: 4px 0 24px 0;
+    padding: 0;
+}
+
+#visit-us-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#book-table-form {
+    background-color: var(--white);
+    border-radius: var(--radius-img);
+    padding: 24px;
+}
+
+#book-table-form h2 {
+    margin: 0 0 4px 0;
+    padding: 0;
+    text-align: center;
+}
+
+#book-table-form form > div {
+    display: flex;
+    gap: 16px;
+}
+
+.form-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#find-table-btn {
+    flex-grow: 1;
+    background-color: var(--amber-500);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#book-table-form p {
+    margin: 8px 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 1rem;
 }
