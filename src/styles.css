@@ -107,16 +107,21 @@ nav {
 }
 
 #left-menu {
+    flex-grow: 2;
+    min-width: 100px;
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 8px;
 }
 
 #center-menu {
+    flex-grow: 1.2;
     justify-content: center;
 }
 
 #right-menu {
+    flex-grow: 2;
+    min-width: 178px;
     justify-content: flex-end;
 }
 
@@ -125,7 +130,8 @@ nav {
     color: var(--forest-500);
 }
 
-#center-menu p {
+#center-menu p,
+#social-media div {
     color: var(--forest-500);
     font-family: 'Fraunces';
     font-size: 1.5rem;
