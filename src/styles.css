@@ -23,6 +23,55 @@
   --radius-img: 16px;
 }
 
+p,
+body,
+ul, li,
+h4 {
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fraunces';
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p,
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.125rem;
+}
+
+a {
+    color: var(--forest-500);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Fraunces';
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cream-100);
+}
+
+p {
+    margin-bottom: 4px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
 /* Font 
 Styles*/
 @font-face {
@@ -51,37 +100,6 @@ Styles*/
     src: url('./assets/fonts/PlusJakartaSans/PlusJakartaSans-Italic-VariableFont_wght.woff2') format('woff2');
     font-weight: 200 800;
     font-style: italic;
-}
-
-p,
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.125rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fraunces';
-    font-weight: 500;
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-body {
-    box-sizing: border-box;
-    background-color: var(--cream-100);
-}
-
-p {
-    margin-bottom: 4px;
-}
-
-button {
-    all: unset;
-    cursor: pointer;
 }
 
 .green-text {
@@ -273,6 +291,11 @@ Styles */
     border-radius: 50%;
 }
 
+#home-page .section-three img {
+    width: 100%;
+    border-radius: var(--radius-img);
+}
+
 .stamp {
     display: flex;
     flex-direction: column;
@@ -305,11 +328,6 @@ Styles */
     width: 96px;
 }
 
-#home-page .section-three img {
-    width: 100%;
-    border-radius: var(--radius-img);
-}
-
 #home-page article {
     padding: 8px;
     padding-bottom: 32px;
@@ -333,4 +351,66 @@ Styles */
 
 #rating p {
     margin-bottom: 32px;
+}
+
+footer {
+    padding: 32px 48px;
+    margin-top: 64px;
+}
+
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 72px 32px 80px;
+    border-radius: var(--radius-img);
+    background-color: #FFFFFFEE;
+    position: relative;
+}
+
+footer > div > p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: fit-content;
+    bottom: 24px;
+    font-size: 0.85rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    flex-shrink: 0;
+}
+
+#social-media {
+    flex-grow: 3;
+    align-self: center;
+}
+#quick-links,
+#resource,
+#say-hello {
+    flex-grow: 2;
+}
+
+#social-media div {
+    margin-bottom: 24px;
+    font-size: 2rem;
+}
+
+#social-media p {
+    max-width: 300px;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+footer li {
+    margin-bottom: 16px;
+    cursor: pointer;
 }
