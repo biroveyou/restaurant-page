@@ -1,4 +1,5 @@
 import { generateButton } from "./buttons.js";
+import { switchToMenu } from "./index.js";
 import shrimpsImgPath from "./assets/images/shrimps.jpg";
 import mealImgPath from "./assets/images/meal.jpg";
 import pizzaImgPath from "./assets/images/pizza.jpg";
@@ -92,6 +93,9 @@ function generateSectionThree() {
     const ratingParagraph = document.createElement("p");
     ratingParagraph.textContent = "Trusted Globally by Our Clients"
     const ratingButton = generateButton("dark", "Explore the menu");
+    ratingButton.addEventListener("click", () => {
+        switchToMenu();
+    });
 
     rating.appendChild(ratingTitle);
     rating.appendChild(ratingParagraph);
