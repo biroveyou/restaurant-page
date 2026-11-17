@@ -4,4 +4,4 @@ import { loadVisitUsPage } from "./visitPage.js";
 
 const pageContent = document.querySelector("#content");
 // pageContent.appendChild(loadHomePage());
-pageContent.appendChild(loadVisitUsPage());
+// pageContent.appendChild(loadVisitUsPage());
