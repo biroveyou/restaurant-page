@@ -109,4 +109,4 @@ function loadHomePage() {
     return main;
 }
 
-export {loadHomePage};
+export { loadHomePage };

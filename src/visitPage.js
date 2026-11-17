@@ -89,4 +89,4 @@ function loadVisitUsPage() {
     return main;
 }
 
-export {loadVisitUsPage};
+export { loadVisitUsPage };
