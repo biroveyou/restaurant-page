@@ -64,13 +64,13 @@ function generateBookTableForm() {
     findTableButton.setAttribute("id", "find-table-btn");
     findTableButton.setAttribute("type", "button");
 
-    const aditionalDetails = document.createElement("p");
-    aditionalDetails.textContent = "For groups of 8 or more, call us at (123) 456-7890.";
+    const additionalDetails = document.createElement("p");
+    additionalDetails.textContent = "For groups of 8 or more, call us at (123) 456-7890.";
 
     form.appendChild(title);
     form.appendChild(fieldsContainer);
     form.appendChild(findTableButton);
-    form.appendChild(aditionalDetails);
+    form.appendChild(additionalDetails);
 
     return container;
 }
